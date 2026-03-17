@@ -1,16 +1,25 @@
-# React + Vite
+CS 314 Chat App - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FIRST STEP
+    git clone https://github.com/fanchen-fc/cs314_front_end.git
+    cd cs314_front_end
 
-Currently, two official plugins are available:
+HOW TO RUN:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install dependencies:
+   npm install
 
-## React Compiler
+2. Start the application:
+   npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. API Configuration:
+   The backend URL is located in src/api.js 
+   The app includes a header to skip the ngrok browser warning
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+FEATURES:
+- User Login, Signup, and Logout
+- Profile name updates
+- Search for users by email or username
+- Toggle between All Contacts and Recent Chats
+- Real-time messaging with Socket.io
+- Delete chat history
